@@ -1,0 +1,33 @@
+[build-system]
+requires = ["scikit-build-core", "numpy"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "x13binary"
+# description = "CLI interface for running SQL queries with Polars as backend"
+# readme = "README.md"
+# authors = [{ name = "Ritchie Vink", email = "ritchie46@gmail.com" }]
+# license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = ["numpy"]
+
+# keywords = ["dataframe", "arrow", "out-of-core", "sql"]
+# classifiers = [
+#     "Development Status :: 5 - Production/Stable",
+#     "Environment :: Console",
+#     "Intended Audience :: Science/Research",
+#     "License :: OSI Approved :: MIT License",
+#     "Operating System :: OS Independent",
+#     "Programming Language :: Python",
+#     "Programming Language :: Python :: 3",
+#     "Programming Language :: Python :: 3 :: Only",
+#     "Programming Language :: Python :: 3.8",
+#     "Programming Language :: Python :: 3.9",
+#     "Programming Language :: Python :: 3.10",
+#     "Programming Language :: Python :: 3.11",
+#     "Programming Language :: Rust",
+#     "Topic :: Scientific/Engineering",
+# ]
+
+[tool.scikit-build]
+cmake.version = "CMakeLists.txt"
